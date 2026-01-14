@@ -108,6 +108,10 @@ Service for registering and handling JSON-RPC methods.
 
 Utility function to auto-register all `@Expose({ transport: 'json-rpc' })` decorated classes.
 
+## Publishing
+
+See [RELEASING.md](./RELEASING.md) for publishing instructions.
+
 ## License
 
 MIT
