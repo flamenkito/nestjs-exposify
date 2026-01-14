@@ -6,3 +6,5 @@ dist/
 .claude/
 
 package-lock.json
+
+nestjs-exposify-*.tgz
