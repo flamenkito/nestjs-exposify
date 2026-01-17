@@ -1,4 +1,10 @@
-# nestjs-exposify
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/logo.png">
+    <img src="assets/logo.png" alt="Exposify Logo" width="400">
+  </picture>
+</div>
 
 Multi-transport service exposure for NestJS applications. Expose your services via JSON-RPC (and more transports coming soon) with a simple decorator.
 
