@@ -36,7 +36,7 @@ import { Injectable } from '@nestjs/common';
 
 @Expose({ transport: 'json-rpc' })
 @Injectable()
-export class UsersService {
+export class UsersApi {
   async getUsers() {
     return [{ id: '1', name: 'John' }];
   }
@@ -72,7 +72,7 @@ Send JSON-RPC 2.0 requests to `/rpc/v1`:
 ```bash
 curl -X POST http://localhost:3000/rpc/v1 \
   -H "Content-Type: application/json" \
-  -d '{"jsonrpc": "2.0", "method": "UsersService.getUsers", "id": 1}'
+  -d '{"jsonrpc": "2.0", "method": "UsersApi.getUsers", "id": 1}'
 ```
 
 Response:
@@ -88,7 +88,7 @@ Response:
 
 RPC methods follow the pattern: `{ClassName}.{methodName}`
 
-For a class `UsersService` with method `getUsers`, the RPC method name is `UsersService.getUsers`.
+For a class `UsersApi` with method `getUsers`, the RPC method name is `UsersApi.getUsers`.
 
 ## API
 
